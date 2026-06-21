@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House — уютная кофейня в центре города</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">Coffee House</div>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#menu">Меню</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <button class="btn btn--header">Забронировать столик</button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Кофе, который хочется пить снова</h1>
+            <p>Обжариваем зёрна сами. Завариваем с любовью. Ждём вас каждый день с 8 утра.</p>
+            <button class="btn btn--primary">Посмотреть меню</button>
+        </div>
+    </section>
+
+    <!-- Будущие секции -->
+  <section id="about" class="section">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon">☕</div>
+                    <h3>Своя обжарка</h3>
+                    <p>Закупаем зелёный кофе напрямую у фермеров и обжариваем небольшими партиями каждую неделю.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🌿</div>
+                    <h3>Натуральные ингредиенты</h3>
+                    <p>Молоко, сиропы и выпечка — только от локальных проверенных поставщиков.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🏡</div>
+                    <h3>Уютная атмосфера</h3>
+                    <p>Тихое пространство для работы, встреч и отдыха в самом центре города.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="menu" class="section section--alt">
+        <div class="container">
+            <h2>Меню</h2>
+            <div class="menu">
+                <div class="menu__item">
+                    <div class="menu__info">
+                        <h3>Эспрессо</h3>
+                        <p>Классический крепкий кофе на основе</p>
+                    </div>
+                    <div class="menu__price">150 ₽</div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__info">
+                        <h3>Капучино</h3>
+                        <p>Эспрессо с воздушной молочной пенкой</p>
+                    </div>
+                    <div class="menu__price">220 ₽</div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__info">
+                        <h3>Латте</h3>
+                        <p>Нежный кофе с большим количеством молока</p>
+                    </div>
+                    <div class="menu__price">240 ₽</div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__info">
+                        <h3>Раф</h3>
+                        <p>Сливочный кофе со взбитыми сливками и ванилью</p>
+                    </div>
+                    <div class="menu__price">270 ₽</div>
+                </div>
+                <div class="menu__item">
+                    <div class="menu__info">
+                        <h3>Круассан классический</h3>
+                        <p>Свежая выпечка собственного производства</p>
+                    </div>
+                    <div class="menu__price">180 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="reviews">
+                <div class="review">
+                    <div class="review__stars">★★★★★</div>
+                    <p class="review__text">Лучший раф в городе! Прихожу сюда работать каждые выходные, очень уютно.</p>
+                    <div class="review__author">— Анна К.</div>
+                </div>
+                <div class="review">
+                    <div class="review__stars">★★★★★</div>
+                    <p class="review__text">Обалденная обжарка, чувствуется разница с сетевыми кофейнями сразу.</p>
+                    <div class="review__author">— Дмитрий С.</div>
+                </div>
+                <div class="review">
+                    <div class="review__stars">★★★★☆</div>
+                    <p class="review__text">Круассаны просто огонь, всегда свежие. Иногда многовато людей в обед.</p>
+                    <div class="review__author">— Марина В.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section section--alt">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form class="form" id="contactForm">
+                <div class="form__group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Как вас зовут?">
+                    <span class="form__error" id="nameError"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                    <span class="form__error" id="phoneError"></span>
+                </div>
+
+                <div class="form__group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Ваш вопрос или пожелание"></textarea>
+                    <span class="form__error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn--primary">Отправить</button>
+                <p class="form__success" id="formSuccess"></p>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">Coffee House</div>
+            <p class="footer__text">© 2026 Coffee House. Все права защищены.</p>
+            <div class="footer__social">
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">VK</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
