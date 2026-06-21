@@ -82,24 +82,26 @@ body {
 
 /* ===== Hero ===== */
 .hero {
-    background: #fff8f0;
-    padding: 100px 0;
+    background: linear-gradient(rgba(43, 29, 20, 0.55), rgba(43, 29, 20, 0.55)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
     text-align: center;
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #2b1d14;
+    color: #fff;
 }
 
 .hero p {
     font-size: 20px;
-    color: #6b5645;
+    color: #f0e4d8;
     max-width: 600px;
     margin: 0 auto 30px;
 }
-
 /* ===== Общие секции ===== */
 .section {
     padding: 80px 0;
